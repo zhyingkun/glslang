@@ -18,6 +18,7 @@ out/
 third_party/
 buildtools/
 tools/
+buildXcode/
 
 # Random OS stuff
 .DS_Store

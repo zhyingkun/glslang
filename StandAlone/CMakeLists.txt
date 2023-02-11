@@ -58,7 +58,9 @@ target_include_directories(glslang-default-resource-limits
                            PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
                            PUBLIC $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}>)
 
-set(SOURCES StandAlone.cpp DirStackFileIncluder.h  ${GLSLANG_INTRINSIC_H})
+set(SOURCES StandAlone.cpp DirStackFileIncluder.h ${GLSLANG_INTRINSIC_H}
+    BcfxPreProcessor.cpp BcfxPreProcessor.h
+)
 
 add_executable(glslangValidator ${SOURCES})
 set_property(TARGET glslangValidator PROPERTY FOLDER tools)
